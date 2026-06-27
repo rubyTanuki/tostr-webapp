@@ -1,13 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tostr-webapp</title>
+    <title>Tostr: Code Context Engine for AI Agents</title>
+
+    <style>
+      html { background-color: #292624; color: #ffffff; }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style.css">
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  
+  <body class="bg-tostr-dark text-white min-h-screen">
+    <!-- HEADER -->
+    <header class="w-full mx-auto py-6 px-6 flex justify-between items-center border-b-4 border-tostr-medium">
+      <div class="flex items-left space-x-4">
+        <img src="/src/assets/logo.png" alt="Tostr Logo" class="w-[278px] h-[58px]">
+      </div>
+      <div class="flex items-right space-x-4">
+        <a href="https://github.com/rubytanuki/tostr"><img src="/src/assets/github.svg" alt="GitHub Logo" class="w-[64px] h-[63px]"></a>
+      </div>
+    </header>
+
+    <main class=" mx-auto px-6 lg:px-8 pt-16 pb-16 gap-4 items-center">
+      <!-- HERO -->
+      <div class="text-center mt-6">
+        <div class=" font-pixel-small text-[48px] text-tostr-tan mb-[-24px]">
+          Stop forcing AI to use grep.
+        </div>
+        <div class="font-pixel-large text-[82px] text-tostr-light text-bouncy">
+          CODE CONTEXT BUILT FOR AGENTS
+        </div>
+        <div class="font-kode-mono font-medium  text-[24px] text-tostr-medium-light">
+          Modern agent frameworks still navigate code with</br>
+          tools built for humans; Tostr reframes codebase exploration with</br>
+          <b class="text-tostr-tan">agentic programmers as the first-class user.</b> By pre-computing a fully</br>
+          resolved and described AST, <b class="text-tostr-tan">Tostr reduces token cost dramatically</b></br>
+          in any codebase, with only 60 seconds of setup.</br>
+        </div>
+        <div class="flex justify-center items-center space-x-4 mt-8">
+          <div class="w-[250px] h-[60px] btn-tostr-solid"><a href="https://github.com/rubytanuki/tostr">Go to Github</a></div>
+          <div class="w-[250px] h-[60px] btn-tostr-outline">Read the docs</div>
+        </div>
+      </div>
+      
+      <div class="w-full">
+        </div>
+
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
