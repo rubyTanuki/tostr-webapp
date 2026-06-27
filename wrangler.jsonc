@@ -1,0 +1,10 @@
+{
+  // Cloudflare Workers static-assets config. This replaces the old Pages
+  // "output directory" field: it tells Cloudflare to serve the built ./dist
+  // folder as a plain static site (no server-side Worker code).
+  "name": "tostr-webapp",
+  "compatibility_date": "2026-06-27",
+  "assets": {
+    "directory": "./dist"
+  }
+}
