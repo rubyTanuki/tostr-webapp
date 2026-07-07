@@ -11,6 +11,11 @@
   --color-tostr-tan: #C59F7B;
   --color-tostr-light: #ffffff;
 
+  
+  --color-tostr-text-medium: #AB8A6B;
+  --color-tostr-text-medium-light: #C59F7B;
+  --color-tostr-text-light: #ffffff;
+
   --font-pixel-large: "Jersey 20", sans-serif;
   --font-pixel-small: "Jersey 10", sans-serif;
   --font-kode-mono: "Kode Mono", monospace;
@@ -31,7 +36,12 @@
   }
 }
 
-.text-bouncy span {
+.text-bouncy .bouncy-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.text-bouncy .bouncy-word span {
   display: inline-block;
   animation: text-bouncy 2.5s ease-in-out infinite;
   /* negative delay so letters start mid-wave -> traveling ripple, no pause */
@@ -44,6 +54,18 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--color-tostr-dark);
+}
+
+/* Page background: bg.jpg fills horizontally (100% width, natural height),
+   with a tostr-dark gradient layered on top — 40% opacity at the top fading
+   to fully opaque at the bottom. */
+body {
+  background-image:
+    linear-gradient(to bottom, rgb(41 38 36 / 0.4), rgb(41 38 36 / 1)),
+    url("/bg.jpg");
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /* Tactile button components — built from the theme tokens above */

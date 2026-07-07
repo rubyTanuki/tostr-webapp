@@ -17,41 +17,48 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   
-  <body class="bg-tostr-dark text-white min-h-screen">
+  <body class="text-white min-h-screen">
     <!-- HEADER -->
-    <header class="bg-tostr-dark w-full mx-auto py-6 px-6 flex justify-between items-center">
+    <header class="bg-transparent w-full mx-auto py-6 px-6 flex justify-between items-center">
       <div class="flex items-left space-x-4">
-        <img src="/src/assets/logo.png" alt="Tostr Logo" class="w-[278px] h-[58px]">
+        <img src="/src/assets/logo.png" alt="Tostr Logo" class="w-[240px] h-[50px]">
       </div>
       <div class="flex items-right space-x-4">
         <a href="https://github.com/rubytanuki/tostr"><img src="/src/assets/github.svg" alt="GitHub Logo" class="w-[64px] h-[63px]"></a>
       </div>
     </header>
 
-    <main class=" mx-auto px-6 lg:px-8 pt-4 pb-16 gap-4 items-center">
+    <main class="mx-16 mt-10 px-16 lg:px-8 pt-4 pb-16 gap-4 items-center">
       <!-- HERO -->
-      <div class="text-center mt-6">
-        <div class=" font-pixel-small text-[48px] text-tostr-tan mb-[-24px]">
-          Stop forcing AI to use grep.
+      <div class="flex items-center gap-8 mt-6">
+        <!-- Left -->
+        <div class="w-3/5 text-left">
+          <div class=" font-pixel-small text-[42px] text-tostr-tan mb-[-24px]">
+            Stop forcing AI to use grep.
+          </div>
+          <div class="font-pixel-large text-[56px] text-tostr-light text-bouncy">
+            CODE CONTEXT BUILT FOR AGENTS
+          </div>
+          <div class="font-kode-mono font-regular  text-[20px] text-tostr-text-medium">
+            Modern agent frameworks still navigate code using</br>
+            tools built for humans; Tostr reframes codebase</br>
+            exploration with <b class="text-tostr-text-medium-light">agentic programmers as the first-class user.</b></br>
+          </div>
+          <div class="flex justify-start items-center space-x-4 mt-8 text-center">
+            <div class="w-[250px] h-[60px] btn-tostr-solid"><a href="https://github.com/rubytanuki/tostr">Go to Github</a></div>
+            <div class="w-[250px] h-[60px] btn-tostr-outline">Read the docs</div>
+          </div>
         </div>
-        <div class="font-pixel-large text-[82px] text-tostr-light text-bouncy">
-          CODE CONTEXT BUILT FOR AGENTS
-        </div>
-        <div class="font-kode-mono font-medium  text-[24px] text-tostr-medium-light">
-          Modern agent frameworks still navigate code with</br>
-          tools built for humans; Tostr reframes codebase exploration with</br>
-          <b class="text-tostr-tan">agentic programmers as the first-class user.</b> By pre-computing a fully</br>
-          resolved and described AST, <b class="text-tostr-tan">Tostr reduces token cost dramatically</b></br>
-          in any codebase, with only 60 seconds of setup.</br>
-        </div>
-        <div class="flex justify-center items-center space-x-4 mt-8">
-          <div class="w-[250px] h-[60px] btn-tostr-solid"><a href="https://github.com/rubytanuki/tostr">Go to Github</a></div>
-          <div class="w-[250px] h-[60px] btn-tostr-outline">Read the docs</div>
+
+        <!-- Right -->
+        <div class="w-2/5 flex justify-center">
+          <div class="relative w-[480px] h-[350px]">
+            <img src="/terminal.svg" alt="Terminal window" class="w-[470px] h-[350px]">
+            <video src="/demo.webm" width="456" height="300" autoplay loop muted playsinline
+              class="absolute ml-[2px] mt-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[456px] h-[300px]"></video>
+          </div>
         </div>
       </div>
-      
-      <div class="w-full">
-        </div>
 
     </main>
 
