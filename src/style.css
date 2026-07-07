@@ -56,6 +56,15 @@ body {
   background-color: var(--color-tostr-dark);
 }
 
+/* Fluid scaling: the whole layout is sized in rem, so scaling the root
+   font-size scales spacing, text, and blocks proportionally.
+   Anchored so a 1512px viewport (Mac laptop) = 16px root, i.e. the
+   original design size; wider screens scale up, capped at 24px.
+   The 0.5rem term keeps user font-size prefs / browser zoom working. */
+html {
+  font-size: clamp(12px, calc(0.5rem + 0.529vw), 24px);
+}
+
 /* Page background: bg.jpg fills horizontally (100% width, natural height),
    with a tostr-dark gradient layered on top — 40% opacity at the top fading
    to fully opaque at the bottom. */
@@ -70,14 +79,14 @@ body {
 
 /* Tactile button components — built from the theme tokens above */
 .btn-tostr-solid {
-  @apply 
+  @apply
   bg-tostr-medium-light hover:bg-tostr-medium
-  text-tostr-tan hover:text-tostr-medium-light font-pixel-small text-[36px] 
-  border-tostr-medium-dark border-b-[4px] border-l-[8px];
+  text-tostr-tan hover:text-tostr-medium-light font-pixel-small text-[2.25rem]
+  border-tostr-medium-dark border-b-[0.25rem] border-l-[0.5rem];
 }
 
 .btn-tostr-outline {
-  @apply 
-  text-tostr-medium-light font-pixel-small text-[36px] hover:text-tostr-medium
-  border-2 border-tostr-medium-light hover:border-tostr-medium;
+  @apply
+  text-tostr-medium-light font-pixel-small text-[2.25rem] hover:text-tostr-medium
+  border-[0.125rem] border-tostr-medium-light hover:border-tostr-medium;
 }

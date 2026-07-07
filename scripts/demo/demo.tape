@@ -2,9 +2,11 @@ Output ../../public/demo.webm
 
 # Configure the UI to match your Vite/Figma design
 Set Theme { "background": "#1C1E22", "foreground": "#cdd6f4", "cursor": "#f5e0dc" }
-Set Width 900
-Set Height 600
-Set Padding 0
+Set WindowBar Colorful
+Set WindowBarSize 48
+Set Width 960
+Set Height 750
+Set Padding 36
 Set FontSize 22
 Set Framerate 60
 Set CursorBlink true
